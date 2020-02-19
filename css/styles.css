@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: dimgrey;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fafafa;  
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+span {
+    font-weight: 700;
+}
+
+footer {
+    border-top: 1px solid #d8d8d8;
+}
+
+
+.portfolio-box { 
+    background-color: #FFFFFF;
+    color: #797979;
+}
+
+.light-text {
+    color: #8f8f8f;
+    line-height: 20px;
+}
+
+.full {
+    display: none;
+}
+
+/* LINK STYLES  */
+
+.nav-list {
+    background-color: #FFF;
+    margin: 5px auto;   
+    padding: 10px;
+}
+
+a,
+a:visited {
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+/* LAYOUT STYLES */
+/* .title-margin {
+    margin: 1em auto;
+}
+.layout-padding {
+    padding: 30px 20px;
+}
+
+.nav-padding,
+footer {
+    padding: 0;
+    margin: 10px;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    margin: 50px 19px;
+} */
+
+/* IMAGE STYLES  */
+
+.top-img {
+    width: 70%;
+}
+
+.box-img {
+    width: 100%;
+}
+
+/* FLEXBOX STYLES  */
+
+.mobile-container {
+    display: flex;
+    justify-content: space-between;
+}
