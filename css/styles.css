@@ -7,7 +7,7 @@ body {
     color: dimgrey;
     margin: 0 auto;
     text-align: center;
-    background-color: #fafafa;  
+    background-color: #f7f4f0;  
 }
 
 ul {
@@ -27,8 +27,18 @@ span {
     font-weight: 700;
 }
 
+p {
+    line-height: 1.563em;
+}
+
 footer {
     border-top: 1px solid #d8d8d8;
+}
+
+.top-nav {
+    background-color: #FFF;
+    margin: 5px auto;   
+    padding: 10px;
 }
 
 
@@ -37,28 +47,27 @@ footer {
     color: #797979;
 }
 
-.light-text {
-    color: #8f8f8f;
-    line-height: 20px;
-}
 
 .full {
     display: none;
 }
 
-/* LINK STYLES  */
 
-.nav-list {
-    background-color: #FFF;
-    margin: 5px auto;   
-    padding: 10px;
+/* NAV STYLES  */
+
+
+.main-nav a {
+    display: block;
+    color: inherit;
+    font-weight: 700;
+    text-align: center;
+    padding: .8em;
+    text-decoration: none;
 }
 
-a,
-a:visited {
-    font-weight: 700;
-    color: inherit;
-    text-decoration: none;
+.main-nav li {
+    background-color: #fff;
+    margin: .4em 15px;
 }
 
 .uppercase-text {
@@ -69,26 +78,25 @@ a:visited {
 
 
 /* LAYOUT STYLES */
-/* .title-margin {
-    margin: 1em auto;
+.title-margin {
+    margin: 1.2em auto;
 }
+
 .layout-padding {
-    padding: 30px 20px;
+    padding: 1.875em 0.813em 1.250em;
 }
 
-.nav-padding,
-footer {
+.nav-padding {
     padding: 0;
-    margin: 10px;
+    margin: .625em;
 }
 
-.portfolio-item {
+.portfolio-title {
     margin-bottom: 40px;
 }
 
-.contact-box {
-    margin: 50px 19px;
-} */
+
+
 
 /* IMAGE STYLES  */
 
