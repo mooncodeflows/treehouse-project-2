@@ -14,7 +14,7 @@
         <h1 class="title-margin">Jasmine Hull</h1>
     </header>
     <nav>
-        <ul class="main-nav uppercase-text nav-container">
+        <ul class="main-nav uppercase-text flex">
             <li><a href="index.html">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,13 +23,15 @@
 
     <main>
 <!-- INTRO  -->
-    <section class="layout-padding intro-container">
+    <section class="sub-header flex">
         <img src="images/responsive-layout-profile.png" alt="Generic profile photo" class="top-img">
-        <p class="light-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <p class="light-text intro-item">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </section>
 <!-- PORTFOLIO BOX  -->
-    <section id="portfolio" class="portfolio-box layout-padding">
-        <h2 class="uppercase-text portfolio-title">Portfolio</h2>
+<section id="portfolio" class="portfolio-box">
+    <h2 class="uppercase-text portfolio-title">Portfolio</h2>
+
+    <div id="portfolio" class="flex wrap">
 
         <div class="portfolio-item">
             <img src="images/portfolio-1.png" alt="Vector image of a browser" class="box-img">
@@ -66,14 +68,15 @@
             <h3 class="portfolio-item-title">Calculator</h3>
             <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </div>
-
+    </div>
     </section>
 <!-- CONTACT  -->
-    <section id="contact" class="contact-box layout-padding">
+    <section id="contact" class="contact-box">
         <h2 class="uppercase-text contact-title">Contact</h2>
         <p class="light-text">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <p class="light-text">Phone <span>+1 (111) 555-1234</span></p>
         <p class="light-text">Email <span>email@yoursite.com</span></p>
+    
     </section>
 
 </main>
@@ -81,7 +84,7 @@
 <!-- FOOTER  -->
 <footer class="mobile-container footer-layout">
     <p>Jasmine Hull</p>
-    <ul>
+    <ul class="footer-nav">
         <li><a href="#top" class="uppercase-text top">Back to Top</a></li>
         <li class="uppercase-text full"><a href="index.html">Home</a></li>
         <li class="uppercase-text full"><a href="#portfolio">Portfolio</a></li>

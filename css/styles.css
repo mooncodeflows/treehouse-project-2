@@ -5,7 +5,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #6d6d6d;
-    margin: 0 auto;
     text-align: center;
     background-color: #fafafa;  
 }
@@ -89,7 +88,11 @@ a {
     margin: 1.2em auto;
 }
 
-.layout-padding {
+.sub-header {
+    margin: 2.500em 1.063em;
+}
+
+.portfolio-box {
     padding: 1.875em 0.813em 1.250em;
 }
 
@@ -111,6 +114,10 @@ a {
     margin-top: 1.875em;
 }
 
+.contact-box {
+    margin: 2.813em 0.813em;
+}
+
 .contact-title {
     margin-top: 1.250em;
 }
@@ -126,11 +133,11 @@ a {
 /* IMAGE STYLES  */
 
 .top-img {
-    width: 70%;
+    max-width: 70%;
 }
 
 .box-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* FLEXBOX STYLES  */
@@ -140,26 +147,76 @@ a {
     justify-content: space-between;
 }
 
+
+
 /* MEDIA QUERIES  */
 
 @media (min-width: 768px) {
 
-    .nav-container,
-    .intro-container {
-        display: flex;
-        flex-direction: row;
+    body {
+        font-size: 1.3em;
     }
 
-    .nav-container {
+    .title-margin{
+        margin-bottom: 0;
+        margin-top: 2em;
+    }
+
+    .flex {
+        display: flex;    
+
+    }
+
+    .main-nav {
         justify-content: center;
     }
 
-    
 
     .main-nav li {
         background-color: #fafafa;
     }
 
+    .sub-header {
+        margin: 3em 1.5em;
+    }
+
+    .top-img {
+        margin-left: 10px;
+    }
+
+
+    .intro-item {
+        order: -1;
+        text-align: left;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+    .full {
+        display: contents;
+    }
+
+    .full a {
+        margin-left: 30px;
+    }
+
+.wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .portfolio-item {
+        max-width: 50%;
+    }
+
+
+.contact-box {
+    max-width: 75%;
+    margin: 0 auto;
+}
 
 
 
