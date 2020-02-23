@@ -6,6 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #6d6d6d;
     text-align: center;
+    margin: 0 auto;
     background-color: #fafafa;  
 }
 
@@ -90,6 +91,7 @@ a {
 
 .sub-header {
     margin: 2.500em 1.063em;
+    margin: auto;
 }
 
 .portfolio-box {
@@ -178,10 +180,12 @@ a {
 
     .sub-header {
         margin: 3em 1.5em;
+
     }
 
     .top-img {
         margin-left: 10px;
+        max-width: 30%;
     }
 
 
@@ -203,20 +207,29 @@ a {
         margin-left: 30px;
     }
 
-.wrap {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-    .portfolio-item {
-        max-width: 50%;
+    .wrap {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
+    .portfolio-item {
+        max-width: 49%;
+    }
 
-.contact-box {
-    max-width: 75%;
-    margin: 0 auto;
-}
+    .contact-box {
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .footer-layout {
+        margin-top: 0;
+    }
+
+    .portfolio-box {
+        padding: 2em 1.5em 1.5em;
+    }
+
 
 
 
