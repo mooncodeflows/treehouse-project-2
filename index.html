@@ -6,26 +6,29 @@
     <title>Responsive Website</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- HEADER  -->
-    <header id="top">
+    <header id="top" class="desktop-container">
         <h1 class="title-margin">Jasmine Hull</h1>
-    </header>
+    
     <nav>
         <ul class="main-nav uppercase-text flex">
             <li><a href="index.html">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    </header>
 
     <main>
 <!-- INTRO  -->
     <section class="sub-header flex">
         <img src="images/responsive-layout-profile.png" alt="Generic profile photo" class="top-img">
-        <p class="light-text intro-item">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <p class="intro-item">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </section>
 <!-- PORTFOLIO BOX  -->
 <section id="portfolio" class="portfolio-box">
@@ -34,48 +37,55 @@
     <div id="portfolio" class="flex wrap">
 
         <div class="portfolio-item">
-            <img src="images/portfolio-1.png" alt="Vector image of a browser" class="box-img">
+            <img src="images/portfolio-1.png" alt="Vector image of a browser" class="portfolio-img">
             <h3 class="portfolio-item-title">Marketing Page</h3>
             <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
         </div>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-2.png" alt="Vector image of a search engine" class="box-img">
+            <img src="images/portfolio-2.png" alt="Vector image of a search engine" class="portfolio-img">
             <h3 class="portfolio-item-title">Search Page</h3>
             <p>This project searches through a specific database to find information that the user is trying to look up.</p>
         </div>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-3.png" alt="Vector image of a travel app" class="box-img">
+            <img src="images/portfolio-3.png" alt="Vector image of a travel app" class="portfolio-img">
             <h3 class="portfolio-item-title">Travel App</h3>
             <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
         </div>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-4.png" alt="Vector image of a map" class="box-img">
+            <img src="images/portfolio-4.png" alt="Vector image of a map" class="portfolio-img">
             <h3 class="portfolio-item-title">Map of Favorite Spots</h3>
             <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
         </div>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-5.png" alt="Vector image of a photo gallery" class="box-img">
+            <img src="images/portfolio-5.png" alt="Vector image of a photo gallery" class="portfolio-img">
             <h3 class="portfolio-item-title">Photo Gallery</h3>
             <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </div>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-6.png" alt="Vector image of a calculator" class="box-img">
+            <img src="images/portfolio-6.png" alt="Vector image of a calculator" class="portfolio-img">
             <h3 class="portfolio-item-title">Calculator</h3>
             <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </div>
     </div>
     </section>
+<!-- SKILLS  -->
+    <section id="skills" class="skills-box">
+        <h2 class="uppercase-text skills-title">Skills</h2>
+        <img src="images/html.svg" alt="HTML icon" class="skills-img">
+        <img src="images/css.svg" alt="CSS icon" class="skills-img">
+        <img src="images/javascript.svg" alt="Javascript icon" class="skills-img">
+    </section>
 <!-- CONTACT  -->
     <section id="contact" class="contact-box">
         <h2 class="uppercase-text contact-title">Contact</h2>
-        <p class="light-text">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p class="light-text">Phone <span>+1 (111) 555-1234</span></p>
-        <p class="light-text">Email <span>email@yoursite.com</span></p>
+        <p class="contact-text">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p class=">Phone <span>+1 (111) 555-1234</span></p>
+        <p class=">Email <span>email@yoursite.com</span></p>
     
     </section>
 
@@ -88,6 +98,7 @@
         <li><a href="#top" class="uppercase-text top">Back to Top</a></li>
         <li class="uppercase-text full"><a href="index.html">Home</a></li>
         <li class="uppercase-text full"><a href="#portfolio">Portfolio</a></li>
+        <li class="uppercase-text full"><a href="#skills">Skills</a></li>
         <li class="uppercase-text full"><a href="#contact">Contact</a></li>
     </ul>
     

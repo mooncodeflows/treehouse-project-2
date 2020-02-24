@@ -7,7 +7,7 @@ body {
     color: #6d6d6d;
     text-align: center;
     margin: 0 auto;
-    background-color: #fafafa;  
+    background-color: #ededed;  
 }
 
 ul {
@@ -16,7 +16,9 @@ ul {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    color: #000000;
+    font-family: 'Lobster', Serif;
 }
 
 h3 {
@@ -35,10 +37,15 @@ footer {
     border-top: 1px solid #d8d8d8;
 }
 
+a:hover {
+    border-bottom: 3px solid #52bbb4;
+
+}
+
 .top-nav {
     background-color: #FFF;
-    margin: 5px auto;   
-    padding: 10px;
+    margin: 0.313em auto;   
+    padding: 0.625em;
 }
 
 
@@ -46,11 +53,6 @@ footer {
     background-color: #FFFFFF;
     color: #797979;
 }
-
-.light-text {
-    color: #a0a0a0;
-}
-
 
 .full {
     display: none;
@@ -91,7 +93,7 @@ a {
 
 .sub-header {
     margin: 2.500em 1.063em;
-    margin: auto;
+    
 }
 
 .portfolio-box {
@@ -103,9 +105,12 @@ a {
     margin: .625em;
 }
 
-.portfolio-title {
-    margin-bottom: 2.500em;
+.portfolio-title,
+.skills-title {
+    margin-top: 0;
+    margin-bottom: 2.900em;
 }
+
 
 .portfolio-item,
 .contact-title {
@@ -116,8 +121,14 @@ a {
     margin-top: 1.875em;
 }
 
+.skills-box {
+    background-color: #fafafa;
+    padding: 3.750em;
+
+}
+
 .contact-box {
-    margin: 2.813em 0.813em;
+    margin: 3.5em .8em;
 }
 
 .contact-title {
@@ -130,16 +141,18 @@ a {
 }
 
 
-
-
 /* IMAGE STYLES  */
 
 .top-img {
     max-width: 70%;
 }
 
-.box-img {
+.portfolio-img {
     max-width: 100%;
+}
+
+.skills-img {
+    max-width: 30%;
 }
 
 /* FLEXBOX STYLES  */
@@ -155,12 +168,10 @@ a {
 
 @media (min-width: 768px) {
 
-    body {
-        font-size: 1.3em;
-    }
+
 
     .title-margin{
-        margin-bottom: 0;
+        margin-bottom: 1.3em;
         margin-top: 2em;
     }
 
@@ -173,9 +184,12 @@ a {
         justify-content: center;
     }
 
+    .main-nav a {
+        padding: 0;
+    }
 
     .main-nav li {
-        background-color: #fafafa;
+        background-color: #ededed;
     }
 
     .sub-header {
@@ -184,10 +198,13 @@ a {
     }
 
     .top-img {
-        margin-left: 10px;
+        margin-left: 0.625em;
         max-width: 30%;
     }
 
+    .skills-img {
+        max-width: 20%;
+    }
 
     .intro-item {
         order: -1;
@@ -204,7 +221,7 @@ a {
     }
 
     .full a {
-        margin-left: 30px;
+        margin-left: 1.875em;
     }
 
     .wrap {
@@ -217,9 +234,13 @@ a {
     }
 
     .contact-box {
-        max-width: 75%;
+        max-width: 60%;
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 3.125em 0;
+    }
+
+    .contact-text {
+        margin: 3.125em auto;
     }
 
     .footer-layout {
@@ -230,10 +251,40 @@ a {
         padding: 2em 1.5em 1.5em;
     }
 
+}
+
+@media (min-width: 1024px) {
 
 
+.desktop-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4.375em;
+}
 
+.sub-header {
+   margin-left: 4.375em;
+   margin-right: 4.375em;
+}
 
+.title-margin {
+    margin: 0;
+}
 
+.top-img {
+    max-width: 100%;
+    margin-left: 2.500em;
+}
 
+.intro-item {
+    margin: 0;
+}
+
+.portfolio-item {
+    max-width: 30%;
+}
+
+.contact-box {
+    max-width: 70%;
+}
 }
