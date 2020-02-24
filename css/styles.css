@@ -37,6 +37,10 @@ footer {
     border-top: 1px solid #d8d8d8;
 }
 
+a {
+    border-bottom: 3px solid transparent;
+}
+
 a:hover {
     border-bottom: 3px solid #52bbb4;
 
